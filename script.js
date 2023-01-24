@@ -5,6 +5,14 @@ function calculate() {
   expression.value = result;
 }
 
+function operatorCheck(){
+    let expression = document.getElementById("valueScreen").value;
+    let lastLetter = expression.substring(expression.length - 1, expression.length);
+    if(lastLetter == "*" || lastLetter == "/" || lastLetter == "-" || lastLetter == "%" || lastLetter == "+"){
+        expression = expression.substring(0, expression.length - 1);
+    }
+}
+
 function power(){
     let number = document.getElementById("valueScreen");
     result = Math.pow(number.value, 2);
