@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <title>Calculator</title>
+</head>
+<body>
+
+<div" class = "calculator">
+    <input type = "text" id="valueScreen" style="text-align: right;">
+    <input type = "button" class = "button" value = "%" onclick="valueScreen.value += '%'">
+    <input type = "button" class = "button"value = "CE" onclick="valueScreen.value = ''">
+    <input type = "button" class = "button"value = "C" onclick="valueScreen.value = ''">
+    <input type = "button" class = "button" value = "X" onclick="valueScreen.value = ''"> 
+    <input type = "button" class = "button" value = "1/x" onclick="valueScreen.value += '1/'">  
+    <input type = "button" class = "button" value = "^" onclick="valueScreen.value += '^'">
+    <input type = "button" class = "button" value = "sqrt" onclick="valueScreen.value += 'sqrt()'"> 
+    <input type = "button" class = "button" value = "/" onclick="valueScreen.value += '/'"> 
+    <input type = "button" class = "button" value = "7" onclick="valueScreen.value += '7'"> 
+    <input type = "button" class = "button" value = "8" onclick="valueScreen.value += '8'"> 
+    <input type = "button" class = "button" value = "9" onclick="valueScreen.value += '9'"> 
+    <input type = "button" class = "button" value = "x" onclick="valueScreen.value += '*'">
+    <input type = "button" class = "button" value = "4" onclick="valueScreen.value += '4'"> 
+    <input type = "button" class = "button" value = "5" onclick="valueScreen.value += '5'"> 
+    <input type = "button" class = "button" value = "6" onclick="valueScreen.value += '6'"> 
+    <input type = "button" class = "button" value = "-" onclick="valueScreen.value += '-'">
+    <input type = "button" class = "button" value = "1" onclick="valueScreen.value += '1'"> 
+    <input type = "button" class = "button" value = "2" onclick="valueScreen.value += '2'"> 
+    <input type = "button" class = "button" value = "3" onclick="valueScreen.value += '3'"> 
+    <input type = "button" class = "button" value = "+" onclick="valueScreen.value += '+'">
+    <input type = "button" class = "button" value = "+/-" onclick="valueScreen.value += '+/-'">
+    <input type = "button" class = "button" value = "0" onclick="valueScreen.value += '0'">
+    <input type = "button" class = "button" value = "." onclick="valueScreen.value += '.'">
+    <input type = "button" class = "equals-btn button" value = "=" onclick="calculate()">
+    
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
