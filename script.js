@@ -16,3 +16,9 @@ function squareRoot(){
     result = Math.sqrt(number.value);
     number.value = result;
 }
+
+function backspace(){
+    let expressionInput = document.getElementById("valueScreen");
+    let expression = expressionInput.value.substring(0, expressionInput.value.length -1);
+    expressionInput.value = expression;
+}
