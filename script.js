@@ -25,8 +25,17 @@ function squareRoot(){
     number.value = result;
 }
 
+function percent(){
+    let number = document.getElementById("valueScreen");
+    result = (number.value / 100)
+    number.value = result;
+}
+
+
+
 function backspace(){
     let expressionInput = document.getElementById("valueScreen");
     let expression = expressionInput.value.substring(0, expressionInput.value.length -1);
     expressionInput.value = expression;
 }
+
