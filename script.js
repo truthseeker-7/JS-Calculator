@@ -31,7 +31,11 @@ function percent(){
     number.value = result;
 }
 
-
+function reciprocal(){
+    let number = document.getElementById("valueScreen");
+    result = (1 / number.value)
+    number.value = result;
+}
 
 function backspace(){
     let expressionInput = document.getElementById("valueScreen");
